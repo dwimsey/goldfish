@@ -20,7 +20,7 @@ RUN apk --no-cache add \
           apk del build-dependencies
 
 #Copy Goldfish files
-COPY docker.hcl .
+COPY docker.hcl ./config.hcl
 COPY entrypoint.sh .
 
 #Set entrypoint to executable for docker-compose
